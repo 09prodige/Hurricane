@@ -11,28 +11,19 @@ export default function Hero() {
     <section id="hero" className="border-b border-white/5 bg-gradient-to-b from-[#0d0d0d] to-[#050505] py-24">
       <div className="mx-auto grid max-w-6xl gap-16 px-6 lg:grid-cols-[1.05fr,0.95fr]">
         <div className="space-y-10">
-          <p className="text-sm uppercase tracking-[0.4em] text-slate-400">
-            Service de nettoyage haut de gamme
-          </p>
+          <p className="text-sm uppercase tracking-[0.4em] text-slate-400">Service de nettoyage</p>
           <h1 className="text-4xl font-semibold leading-tight text-white md:text-6xl">
-            Moins de ménage, plus de sérénité.
-            <br />
-            Hurricane s&apos;occupe du reste.
+            Posez le cœur, Hurricane s’occupe du reste.
           </h1>
           <p className="max-w-xl text-lg text-slate-300">
-            Nous libérons votre esprit en prenant soin de chaque détail : entretien,
-            remise à neuf et protocoles sûrs. Votre concierge dédié s&apos;assure d&apos;une
-            expérience fluide du premier contact à la livraison.
+            Nous faisons le nettoyage et l’entretien des espaces verts à Libreville. Que ce soit pour une cour, un chantier ou un terrain, notre équipe est là pour vous aider à garder votre espace propre et agréable.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a
-              href="#contact"
-              className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition hover:bg-slate-200"
-            >
-              Découvrir ma formule
+            <a href="#contact" className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition hover:bg-slate-200">
+              Demander un devis
             </a>
             <button className="rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:border-white">
-              Explorer nos offres
+              Voir nos services
             </button>
           </div>
           <div className="flex flex-wrap gap-8 border-t border-white/5 pt-10 text-sm text-slate-300">
@@ -47,14 +38,9 @@ export default function Hero() {
         <aside className="space-y-6">
           <div className="rounded-3xl border border-white/5 bg-white/5 p-8 backdrop-blur">
             <div className="mb-6 space-y-2">
-              <p className="text-sm uppercase tracking-[0.3em] text-slate-400">
-                Votre concierge dédié
-              </p>
-              <h2 className="text-2xl font-semibold text-white">Un interlocuteur unique</h2>
-              <p className="text-sm text-slate-300">
-                Suivi personnalisé, visites de contrôle et accompagnement avant et
-                après chaque prestation.
-              </p>
+              <p className="text-sm uppercase tracking-[0.3em] text-slate-400">Votre service dédié</p>
+              <h2 className="text-2xl font-semibold text-white">Tu dis seulement A</h2>
+              <p className="text-sm text-slate-300">On s’adapte, on fait le point ensemble et on passe au boulot.</p>
             </div>
             <dl className="space-y-4 text-sm text-slate-200">
               <div className="flex justify-between rounded-2xl bg-black/40 px-4 py-3">
@@ -68,9 +54,7 @@ export default function Hero() {
             </dl>
             <div className="mt-8 flex items-center justify-between rounded-2xl border border-white/10 bg-black/60 px-5 py-4">
               <div>
-                <p className="text-xs uppercase tracking-[0.3em] text-slate-500">
-                  Besoin d&apos;aide ?
-                </p>
+                <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Besoin d&apos;aide ?</p>
                 <p className="text-sm font-medium text-white">Parlons de votre projet</p>
               </div>
               <ContactButton />

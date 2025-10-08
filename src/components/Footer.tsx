@@ -7,30 +7,28 @@ export default function Footer() {
         <div className="space-y-4 text-left">
           <h3 className="text-2xl font-semibold text-white">HURRICANE</h3>
           <p className="max-w-xs text-slate-400">
-            Service de nettoyage haut de gamme au Gabon. Conciergerie dédiée, équipes certifiées et protocoles maîtrisés.
+            Hurricane Space Cleaner, société gabonaise de nettoyage et d’entretien d’espaces verts à Libreville. Nous
+            intervenons partout : maisons, cours, chantiers, terrains et espaces publics.
           </p>
         </div>
 
         <div className="space-y-2 text-left">
           <p className="font-semibold uppercase tracking-[0.3em] text-slate-500">Nous écrire</p>
-          <a href="mailto:contact@hurricane-clean.com" className="text-slate-200 hover:text-white">
-            contact@hurricane-clean.com
+          <a href="mailto:hurricanespacecleaner@gmail.com" className="text-slate-200 hover:text-white">
+            hurricanespacecleaner@gmail.com
           </a>
-          <p className="text-slate-400">+241 02 90 03 04</p>
+          <p className="text-slate-400">+24177254039</p>
         </div>
 
         <div className="space-y-2 text-left">
           <p className="font-semibold uppercase tracking-[0.3em] text-slate-500">Nous suivre</p>
           <div className="flex gap-4 text-slate-300">
-            <a href="#">Instagram</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">Facebook</a>
+            <a href="https://www.facebook.com/profile.php?id=61561669726059&locale=fr_FR" target="_blank" rel="noreferrer">Facebook</a>
+            <a href="https://www.linkedin.com/in/jeremie-akwe-95a68b28a/" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
         </div>
       </div>
-      <p className="mt-12 text-center text-xs uppercase tracking-[0.3em] text-slate-600">
-        © {currentYear} Hurricane. Tous droits réservés.
-      </p>
+      <p className="mt-12 text-center text-xs uppercase tracking-[0.3em] text-slate-600">© {currentYear} Hurricane. Tous droits réservés.</p>
     </footer>
   );
 }

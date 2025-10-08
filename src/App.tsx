@@ -4,7 +4,6 @@ import Footer from "./components/Footer";
 import Home from "./page/Home";
 import Services from "./page/Services";
 import About from "./page/About";
-import Contact from "./page/Contact";
 
 export default function App() {
   return (
@@ -16,7 +15,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
             <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
+            {/* Contact page removed; use #contact section on Home */}
           </Routes>
         </main>
         <Footer />
