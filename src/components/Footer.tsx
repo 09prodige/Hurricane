@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="space-y-4 text-left">
           <h3 className="text-2xl font-semibold text-white">HURRICANE</h3>
           <p className="max-w-xs text-slate-400">
-            Hurricane Space Cleaner, société gabonaise de nettoyage et d’entretien d’espaces verts à Libreville. Nous
+            Hurricane Space Cleaner, société gabonaise de nettoyage et d'entretien d'espaces verts à Libreville. Nous
             intervenons partout : maisons, cours, chantiers, terrains et espaces publics.
           </p>
         </div>
@@ -32,3 +32,4 @@ export default function Footer() {
     </footer>
   );
 }
+

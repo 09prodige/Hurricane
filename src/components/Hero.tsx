@@ -13,10 +13,10 @@ export default function Hero() {
         <div className="space-y-10">
           <p className="text-sm uppercase tracking-[0.4em] text-slate-400">Service de nettoyage</p>
           <h1 className="text-4xl font-semibold leading-tight text-white md:text-6xl">
-            Posez le cœur, Hurricane s’occupe du reste.
+            Posez le cœur, Hurricane s'occupe du reste.
           </h1>
           <p className="max-w-xl text-lg text-slate-300">
-            Nous faisons le nettoyage et l’entretien des espaces verts à Libreville. Que ce soit pour une cour, un chantier ou un terrain, notre équipe est là pour vous aider à garder votre espace propre et agréable.
+            Nous faisons le nettoyage et l'entretien des espaces verts à Libreville. Que ce soit pour une cour, un chantier ou un terrain, notre équipe est là pour vous aider à garder votre espace propre et agréable.
           </p>
           <div className="flex flex-wrap gap-4">
             <a href="#contact" className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition hover:bg-slate-200">
@@ -40,7 +40,7 @@ export default function Hero() {
             <div className="mb-6 space-y-2">
               <p className="text-sm uppercase tracking-[0.3em] text-slate-400">Votre service dédié</p>
               <h2 className="text-2xl font-semibold text-white">Tu dis seulement A</h2>
-              <p className="text-sm text-slate-300">On s’adapte, on fait le point ensemble et on passe au boulot.</p>
+              <p className="text-sm text-slate-300">On s'adapte, on fait le point ensemble et on passe au boulot.</p>
             </div>
             <dl className="space-y-4 text-sm text-slate-200">
               <div className="flex justify-between rounded-2xl bg-black/40 px-4 py-3">
@@ -65,3 +65,4 @@ export default function Hero() {
     </section>
   );
 }
+
