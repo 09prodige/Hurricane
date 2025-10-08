@@ -9,7 +9,7 @@ import Contact from "./page/Contact";
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="flex flex-col min-h-screen bg-white text-gray-800">
+      <div className="flex min-h-screen flex-col bg-[#050505] text-slate-100">
         <Header />
         <main className="flex-grow">
           <Routes>
