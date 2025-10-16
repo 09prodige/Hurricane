@@ -2,7 +2,7 @@ import ContactButton from "./ContactButton";
 
 const stats = [
   { value: "5/5", label: "Avis clients" },
-  { value: "72h", label: "Prise en charge" },
+  { value: "24h", label: "Intervention" },
   { value: "100%", label: "Satisfaction garantie" },
 ];
 

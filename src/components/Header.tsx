@@ -21,8 +21,20 @@ export default function Header() {
           }}
           className="flex items-center gap-3 text-xl font-semibold tracking-wide text-white"
         >
-          <img src={logo} alt="Hurricane" className="h-10 w-auto shrink-0" />
-          <span className="hidden md:inline">HURRICANE</span>
+          <img
+            src={logo}
+            alt="Hurricane"
+            className="h-10 w-auto shrink-0 cursor-pointer"
+            onClick={(e) => {
+              // Empêche le clic sur l'image de déclencher le scroll
+              e.stopPropagation();
+              e.preventDefault();
+              // Force le rechargement du logo en contournant le cache
+              const img = e.currentTarget as HTMLImageElement;
+              img.src = `${logo}?t=${Date.now()}`;
+            }}
+          />
+          <span className="inline">HURRICANE</span>
         </a>
 
         <nav className="hidden items-center gap-8 text-sm font-medium text-slate-300 md:flex">
