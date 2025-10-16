@@ -1,37 +1,74 @@
 import { Link } from "react-router-dom";
+// @ts-ignore: allow importing image assets without a type declaration
 import logo from "../assets/logo.png";
 
-const links = [
-  { href: "/#services", label: "Services" },
-  { href: "/#method", label: "Méthode" },
-  { href: "/#testimonials", label: "Témoignages" },
-];
-
 export default function Header() {
+  // ⚠️ Si tu préfères un scroll 100% fiable (même avec Router),
+  // on déclenche scrollIntoView manuellement.
+  const goTo = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <header className="sticky top-0 z-20 border-b border-white/5 bg-[#050505]/80 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-        <Link to="/" className="flex items-center gap-3 text-xl font-semibold tracking-wide text-white">
+        <a
+          href="#hero"
+          onClick={(e) => {
+            e.preventDefault();
+            goTo("hero");
+          }}
+          className="flex items-center gap-3 text-xl font-semibold tracking-wide text-white"
+        >
           <img src={logo} alt="Hurricane" className="h-10 w-auto shrink-0" />
           <span className="hidden md:inline">HURRICANE</span>
-        </Link>
+        </a>
 
         <nav className="hidden items-center gap-8 text-sm font-medium text-slate-300 md:flex">
-          {links.map((link) => (
-            <Link key={link.href} to={link.href} className="hover:text-white">
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+          <a
+            href="#services"
+            onClick={(e) => {
+              e.preventDefault();
+              goTo("services");
+            }}
+            className="hover:text-white"
+          >
+            Services
+          </a>
+          <a
+            href="#method"
+            onClick={(e) => {
+              e.preventDefault();
+              goTo("method");
+            }}
+            className="hover:text-white"
+          >
+            Méthode
+          </a>
+          <a
+            href="#testimonials"
+            onClick={(e) => {
+              e.preventDefault();
+              goTo("testimonials");
+            }}
+            className="hover:text-white"
+          >
+            Témoignages
+          </a>
 
-        <Link
-          to="/#contact"
-          className="rounded-full bg-white px-5 py-2 text-sm font-semibold text-black transition hover:bg-slate-200"
-        >
-          Prendre RDV
-        </Link>
+          <a
+            href="#contact"
+            onClick={(e) => {
+              e.preventDefault();
+              goTo("contact");
+            }}
+            className="hover:text-white"
+          >
+            Contact
+          </a>
+        </nav>
       </div>
     </header>
   );
 }
-
