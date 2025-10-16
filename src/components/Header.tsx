@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
 // @ts-ignore: allow importing image assets without a type declaration
-import logo from "../assets/logo.png";
+import logo from "../assets/logoo.png";
 
 export default function Header() {
-  // ⚠️ Si tu préfères un scroll 100% fiable (même avec Router),
-  // on déclenche scrollIntoView manuellement.
   const goTo = (id: string) => {
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -24,7 +22,7 @@ export default function Header() {
           <img
             src={logo}
             alt="Hurricane"
-            className="h-10 w-auto shrink-0 cursor-pointer"
+            className="h-16 w-auto shrink-0 cursor-pointer"
             onClick={(e) => {
               // Empêche le clic sur l'image de déclencher le scroll
               e.stopPropagation();
